@@ -1,0 +1,126 @@
+/* add your custom css here */
+/* do NOT edit the styles.css file */
+
+body {
+  font-family:'Montserrat';
+}
+
+.section-padding { /* Smaller padding for each section */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+header { /* Hero image */
+    background-image:url(../images/connect.jpeg);
+                background-color:rgba(0, 0, 0, 0.2);
+                background-blend-mode:darken;
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position:bottom right;
+                background-attachment:fixed;
+                height:500px;
+}
+
+img.mockup { /* Max size for mockup images */
+    max-height:400px;
+}
+
+.app-badge {
+    padding:10px;
+    max-height:80px;
+}
+
+.large { /* Large heading */
+    font-size:2rem;
+}
+
+.hero1 { /* Hero image text on smaller screens */
+    font-size:4rem;
+    padding-top:40px;
+}
+
+.bg-main {
+    background-color:#f8f7f5;
+}
+
+.bg-alt {
+    background-color:#ebeae8;
+}
+
+.bg-green {
+    background-color:#f5ffdf;
+}
+
+.footer-text {
+    color:black;
+}
+
+
+/* Link colors */
+a:link {
+    color:#413e9f;
+}
+a:visited {
+    color:#413e9f;
+}
+a:hover {
+    color:#498d48;
+}
+a:active {
+    color:#336332;
+}
+
+
+/* Modifying nav colors */
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.75);
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(0, 0, 0, 0.5);
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Modifying button colors */
+.btn-primary {
+    color: #fff;
+    background-color: #f5ffdf;
+    border-color: #d0d9bd;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #a4ad90;
+  border-color: #a4ad90;
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: #fff;
+  background-color: #a4ad90;
+  border-color: #a4ad90;
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0);
+}
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0);
+}
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #767d65;
+  border-color: #767d65;
+}
+
+
+/* Media queries */
+@media (min-width: 992px) {
+  .extra-padding { /* Creates extra padding at larger screen sizes */
+    padding-left:10%;
+    padding-right:10%;
+  }
+    
+@media (min-width: 992px) {
+  .hero1 { /* Re-aligns and re-sizes hero text for larger screens */
+      font-size:5rem;
+      padding-top:60px;
+  }
+}
